@@ -4,6 +4,11 @@ import Navbar from './Navbar.js';
 import Card from './Card.js';
 
 function App() {
+  const personas = [
+    {name: 'Fabian', age: '23'},
+    {name: 'Maria', age: '21'},
+    {name: 'Juan', age: '30'},
+  ];
   return (
     <div className="App">
       <Navbar />
@@ -20,9 +25,9 @@ function App() {
         >
 BARIANDARAN-REACT</a>
 <br/>
-<Card name= 'Ana' age= '25'/>
-      </header>
-    </div>
+{ personas.map(persona => <Card key={persona.name} name={persona.name} age={persona.age} />) }
+</header>
+</div>
   );
 }
 
