@@ -20,7 +20,7 @@ function App() {
         >
 BARIANDARAN-REACT</a>
 <br/>
-<Card />
+<Card name= 'Ana' age= '25'/>
       </header>
     </div>
   );

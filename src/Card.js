@@ -1,15 +1,10 @@
-import React, { Component } from "react";
- export class Card extends Component {
-     render() {
-            return (
-                <div className="card">
-                    <div className="card-body">
-                        <h5 className="card-title">{this.props.title}</h5>
-                        <p className="card-text">{this.props.text}</p>
-                        <a href="#" className="btn btn-primary">Go somewhere</a>
+import React from "react";
+const Card = ({name, age}) => {
+     return (
+                <div>
+                    <h3>Nombre: {name}</h3>
+                    <h3>Edad: {age}</h3>
                     </div>
-                </div>
             );
         }
-    }
  export default Card;
