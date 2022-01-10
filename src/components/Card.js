@@ -1,9 +1,8 @@
 import React from "react";
-const Card = ({name, age}) => {
+const Card = ({name, price}) => {
      return (
                 <div>
-                    <h3>Nombre: {name}</h3>
-                    <h3>Edad: {age}</h3>
+                    <h3>Producto: {name} Precio: ${price}</h3>
                     </div>
             );
         }
